@@ -1,2 +1,2 @@
 # bonsai
-C game engine
+C++ game engine
