@@ -38,5 +38,5 @@ target_link_directories(${PROJECT_NAME}
 # Add link libraries
 target_link_libraries(${PROJECT_NAME}
   PRIVATE
-    glfw  
+    glfw
 )
