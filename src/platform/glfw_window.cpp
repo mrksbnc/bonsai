@@ -5,16 +5,39 @@ GlfwWindow::GlfwWindow() {
 }
 
 void GlfwWindow::open() {
-	glfwInit();
+	GLFWwindow* window;
 
-	_window = glfwCreateWindow(800, 600, "Bonsai", NULL, NULL);
+	/* Initialize the library */
+	if (!glfwInit())
+		return;
 
-	if (!_window) {
+	/* Create a windowed mode window and its OpenGL context */
+	window = glfwCreateWindow(800, 600, "Hello World", NULL, NULL);
+
+	if (!window) {
 		glfwTerminate();
 		return;
 	}
 
-	glfwMakeContextCurrent(_window);
+	/* Make the window's context current */
+	glfwMakeContextCurrent(window);
+
+	/* Loop until the user closes the window */
+	while (!glfwWindowShouldClose(window)) {
+
+		/* Render here */
+		// glClear(GL_COLOR_BUFFER_BIT);
+
+		/* Swap front and back buffers */
+		glfwSwapBuffers(window);
+
+		/* Poll for and process events */
+		glfwPollEvents();
+	}
+
+	glfwTerminate();
+
+	return;
 }
 
 void GlfwWindow::update() {
