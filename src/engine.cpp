@@ -1,5 +1,5 @@
 #include <GLFW/glfw3.h>
-#include <bonsai.h>
+#include <bonsai/engine.h>
 #include <iostream>
 
 int Bonsai::init() {
