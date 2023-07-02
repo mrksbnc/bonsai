@@ -1,8 +1,9 @@
 #include <GLFW/glfw3.h>
+#include <bonsai.h>
 #include <iostream>
 
-int main(void) {
-	std::cout << "Hello, World!" << std::endl;
+int Bonsai::init() {
+	std::cout << "Bonsai engine initializing window..." << std::endl;
 
 	GLFWwindow* window;
 
