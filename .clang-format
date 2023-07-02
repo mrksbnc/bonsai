@@ -1,0 +1,8 @@
+BasedOnStyle: LLVM
+TabWidth: 2
+IndentWidth: 2
+ColumnLimit: 0
+UseTab: Always
+PointerAlignment: Left
+NamespaceIndentation: All
+BreakBeforeBraces: Attach
