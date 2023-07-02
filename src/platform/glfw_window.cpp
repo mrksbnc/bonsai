@@ -19,7 +19,6 @@ void GlfwWindow::open() {
 
 void GlfwWindow::update() {
 	while (!glfwWindowShouldClose(_window)) {
-		glClear(GL_COLOR_BUFFER_BIT);
 		glfwSwapBuffers(_window);
 		glfwPollEvents();
 	}
