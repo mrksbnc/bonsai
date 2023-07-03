@@ -26,4 +26,5 @@ void GlfwWindow::update() {
 	}
 
 	glfwTerminate();
+	glfwDestroyWindow(_window);
 }

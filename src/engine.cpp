@@ -4,9 +4,9 @@
 #include <bonsai/service_locator.h>
 #include <iostream>
 
-int Bonsai::init() {
+void Bonsai::init(void) {
 	std::cout << "Bonsai engine initializing window..." << std::endl;
 
-	ServiceLocator::provide(new GlfwWindow());
-	return 0;
+	GlfwWindow* window = new GlfwWindow();
+	ServiceLocator::provide(window);
 }

@@ -2,5 +2,5 @@
 
 class Bonsai {
 public:
-	static int init();
+	static void init();
 };

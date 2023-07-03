@@ -6,6 +6,7 @@
 class GlfwWindow : public Window {
 public:
 	GlfwWindow();
+	~GlfwWindow() = default;
 
 	virtual void open() override;
 	virtual void update() override;
